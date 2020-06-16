@@ -1,0 +1,19 @@
+{
+  "name": "ghom-anime-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilleAbella/MyAnimeList.git"
+  },
+  "author": "ghom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilleAbella/MyAnimeList/issues"
+  },
+  "homepage": "https://github.com/CamilleAbella/MyAnimeList#readme"
+}
