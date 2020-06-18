@@ -42,12 +42,13 @@
             alt="${anime.name.toLowerCase()} image">
         </div>
         <div class="wrapper flags">
-          ${anime.flags.map(c => "<div>" + c + "</div>")}
+          ${anime.flags.map(c => "<div>" + c + "</div>").join("")}
         </div>
-        <div class="wrapper comments">
-          ${anime.comment.map(c => "<div>" + c + "</div>")}
+      ` + (anime.comment.length > 0 ? `
+        <div class="comments">
+          ${anime.comment.map(c => "<div>" + c + "</div>").join("")}
         </div>
-      `
+      ` : '')
     }
 
     function parseQuery(queryString) {
