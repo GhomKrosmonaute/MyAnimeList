@@ -4,9 +4,9 @@ const make = require("./builder/make");
 
 (async function(){try{
   
-    console.time("build in")
+    console.time("built in")
     await prepare()
     await make()
-    console.timeEnd("build in")
+    console.timeEnd("built in")
   
 }catch(error){console.error(error)}})();
