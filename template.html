@@ -19,5 +19,46 @@
       Join the Ghom Discord server <a href="https://discord.gg/mSdx3eZ">here</a>
     </footer>
   </div>
+  <div id="popup" onclick="closePopup()" title="close popup"></div>
+  <script>
+    function openPopup(queryString) {
+      const { meta } = parseQuery(queryString)
+      const popup = document.getElementById("popup")
+      popup.innerHTML = newPopup(JSON.parse(meta))
+      popup.style.top = "50vh"
+    }
+
+    function closePopup() {
+      const popup = document.getElementById("popup")
+      popup.style.top = "-50vh"
+    }
+
+    function newPopup(anime) {
+      return `
+        <h2> ${anime.name} </h2>
+        <div class="frame">
+          <img
+            src="${anime.image}"
+            alt="${anime.name.toLowerCase()} image">
+        </div>
+        <div class="wrapper flags">
+          ${anime.flags.map(c => "<div>" + c + "</div>")}
+        </div>
+        <div class="wrapper comments">
+          ${anime.comment.map(c => "<div>" + c + "</div>")}
+        </div>
+      `
+    }
+
+    function parseQuery(queryString) {
+      const query = {};
+      const pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+      for (let i = 0; i < pairs.length; i++) {
+        const pair = pairs[i].split('=');
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+      }
+      return query;
+    }
+  </script>
 </body>
 </html>

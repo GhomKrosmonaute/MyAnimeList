@@ -38,6 +38,15 @@ footer {
   font-family: sans-serif;
 }
 
+img {
+  object-fit: contain;
+}
+
+h2 {
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -54,6 +63,7 @@ footer {
 }
 
 .card {
+  cursor: pointer;
   padding: 10px;
   margin: 10px;
   background-color: #666;
@@ -61,21 +71,41 @@ footer {
   border-radius: 5px;
 }
 
-.card .frame {
-  background-color: #111;
-  border-radius: 5px;
-}
-
-.card h3 {
-  font-size: 22px;
+.card h2 {
   white-space: nowrap;
   width: 250px;
   overflow: hidden;
-  padding-bottom: 5px;
 }
 
 .card img {
   width: 250px;
   height: 250px;
-  object-fit: contain;
+}
+
+#popup {
+  cursor: pointer;
+  box-shadow: 0 0 20px #000;
+  background-color: #999999;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: top 300ms ease;
+  top: -50vh;
+  left: 50vw;
+  z-index: 2;
+}
+
+#popup img {
+  width: 80vw;
+  height: 60vh;
+}
+
+.frame {
+  background-color: #111;
+  border-radius: 5px;
+}
+
+.flags > * {
+  cursor: pointer;
 }
