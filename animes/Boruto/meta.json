@@ -1,7 +1,9 @@
 {
-	"name": "Boruto",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Boruto",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

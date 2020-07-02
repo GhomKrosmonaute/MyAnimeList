@@ -1,7 +1,9 @@
 {
-	"name": "Code Geass",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Code Geass",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

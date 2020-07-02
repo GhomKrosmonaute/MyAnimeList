@@ -1,7 +1,9 @@
 {
-	"name": "A Certain Magical Index",
-	"media": "série",
-	"note": 0.5,
-	"flags": ["comédie","action","fantaisie","science fiction","loli","shonen","24 épisodes"],
-	"comment": ["En regardant les premiers épisodes, jamais je me serait attendu à apprécier cet anime à ce point !", "Je le conseille vivement ainsi que son frère du même univers : A Certain Scientific Railgun."]
+  "name": "A Certain Magical Index",
+  "media": "série",
+  "note": 0.5,
+  "saisons": 1,
+  "épisodes": 24,
+  "flags": ["comédie","action","fantaisie","science fiction","loli","shonen"],
+  "comment": ["A regarder avant son frère du même univers : A Certain Scientific Railgun."]
 }

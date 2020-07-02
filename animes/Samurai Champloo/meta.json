@@ -1,7 +1,9 @@
 {
-	"name": "Samurai Champloo",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Samurai Champloo",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

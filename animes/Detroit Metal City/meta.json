@@ -1,7 +1,9 @@
 {
-	"name": "Detroit Metal City",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Detroit Metal City",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

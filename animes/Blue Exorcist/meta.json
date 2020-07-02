@@ -1,7 +1,9 @@
 {
-	"name": "Blue Exorcist",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Blue Exorcist",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

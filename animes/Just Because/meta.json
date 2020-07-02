@@ -1,7 +1,9 @@
 {
-	"name": "Just Because",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Just Because",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

@@ -1,7 +1,9 @@
 {
-	"name": "Fire Force",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "Fire Force",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }

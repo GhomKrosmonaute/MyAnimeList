@@ -1,7 +1,9 @@
 {
-	"name": "My Hime",
-	"media": "série",
-	"note": 0,
-	"flags": [],
-	"comment": []
+  "name": "My Hime",
+  "media": "série",
+  "note": 0,
+  "flags": [],
+  "comment": [],
+  "saisons": 0,
+  "épisodes": 0
 }
