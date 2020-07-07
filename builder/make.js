@@ -1,24 +1,23 @@
-
 const querystring = require("querystring");
 const { promises: fs } = require("fs");
 const extRegex = /\.(jpe?g|png|gif)/;
 
-async function make(){
+async function make(animes) {
   const cards = [];
-  const template = await fs.readFile("./template.html", {encoding: "utf8"})
-  
-  const animes = (await fs.readdir("./animes"))
-    .filter(folder => !extRegex.test(folder))
-    .map(folder => ({
-      image: "./animes/" + folder + "/image",
-      ...require("../animes/" + folder + "/meta.json")
-    }));
-  
-  for(const anime of animes){
+  const template = await fs.readFile("./template.html", { encoding: "utf8" });
+
+  const functions = (await fs.readdir("./functions")).map((name) =>
+    require("../functions/" + name)
+  );
+
+  for (const anime of animes) {
+    const meta = querystring.stringify({ meta: JSON.stringify(anime) });
     cards.push(`
       <div
-        class="card ${anime.flags.join(' ')}"
-        onclick="openPopup('${querystring.stringify({meta: JSON.stringify(anime)})}')">
+        id="anime-${anime.id}"
+        meta="${meta}"
+        class="${["card", ...anime.flags].join(" ")}"
+        onclick="openPopup(this)">
         <h2 title="${anime.name}"> ${anime.name} </h2>
         <div class="frame">
           <img
@@ -27,10 +26,15 @@ async function make(){
             alt="${anime.name.toLowerCase()} image">
         </div>
       </div>
-    `)
+    `);
   }
-  
-  await fs.writeFile("./index.html", template.replace("{{cards}}",cards.join("")))
+
+  await fs.writeFile(
+    "./index.html",
+    template
+      .replace("{{cards}}", cards.join(""))
+      .replace("{{functions}}", functions.join("\n\n"))
+  );
 }
 
-module.exports = make
+module.exports = make;

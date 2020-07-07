@@ -35,7 +35,16 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif;
+  font-size: 15px;
+}
+
+footer .fa-discord {
+  height: 34px;
+  padding: 8px;
 }
 
 img {
@@ -82,16 +91,25 @@ h2 {
   height: 250px;
 }
 
+#close {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -100vh;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: top 300ms ease;
+}
+
 #popup {
   cursor: pointer;
   box-shadow: 0 0 20px #000;
   background-color: #999999;
   padding: 10px;
   border-radius: 5px;
-  position: fixed;
+  position: absolute;
   transform: translate(-50%, -50%);
-  transition: top 300ms ease;
-  top: -50vh;
+  top: 50vh;
   left: 50vw;
   z-index: 2;
 }
@@ -107,7 +125,7 @@ h2 {
 
 .frame {
   background-color: #111;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .flags > * {
@@ -139,4 +157,34 @@ h2 {
   border-bottom: 1px solid #333333;
   border-left: 2px solid #333333;
   border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+  height: 5vh;
+  width: 80vw;
+}
+
+.nav > * {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #111111;
+  color: #eaeaea;
+  transition: all 300ms ease;
+}
+
+.nav > :hover {
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(234, 234, 234, 0.59);
+}
+
+.nav .prev {
+  border-radius: 0 0 0 5px;
+}
+
+.nav .next {
+  border-radius: 0 0 5px 0;
 }
