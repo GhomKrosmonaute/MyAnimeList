@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  max-width: 900px;
+  background-color: #444;
+  box-shadow: 0 0 15px #000;
+  min-height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.frame {
+  background-color: #111;
+  border-radius: 5px 5px 0 0;
+}

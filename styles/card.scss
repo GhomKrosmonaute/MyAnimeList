@@ -1,0 +1,19 @@
+.card {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  background-color: #666;
+  box-shadow: 0 0 10px #000;
+  border-radius: 5px;
+
+  h2 {
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+  }
+}
