@@ -6,5 +6,5 @@ module.exports = function parseQuery(query) {
     const key = decodeURIComponent(pair[0]);
     result[key] = decodeURIComponent(pair[1] || "");
   }
-  return result;
+  return JSON.parse(result.meta);
 };

@@ -38,8 +38,25 @@ body {
     padding: 20px;
   }
 
+  header {
+    #search {
+      padding: 2px;
+      border-radius: 2px;
+      text-align: center;
+      background-color: #999999;
+      color: #111111;
+      transition: background-color 100ms ease;
+
+      &:hover,
+      &:focus {
+        background-color: #eaeaea;
+      }
+    }
+  }
+
   main {
     margin: 15px 0 15px 0;
+    flex-grow: 1;
   }
 
   footer {

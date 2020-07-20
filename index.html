@@ -10,6 +10,11 @@
   <div class="container">
     <header>
       <h1> Ghom Anime List </h1>
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Rechercher">
     </header>
     <main>
       <div class="wrapper">
@@ -1584,6 +1589,9 @@
   </div>
   <script>
     document.getElementById("close").onclick = closePopup;
+    document.getElementById("search").onkeyup = event => {
+      if(event.key === "Enter") search(event.target.value)
+    };
     function closePopup(event) {
   const close = document.getElementById("close");
   if (event.target === close) close.style.top = "-100vh";
@@ -1624,10 +1632,9 @@ function newPopup(anime) {
 
 function openPopup(card) {
   const queryString = card.getAttribute("meta");
-  const { meta } = parseQuery(queryString);
   const close = document.getElementById("close");
   const popup = document.getElementById("popup");
-  popup.innerHTML = newPopup(JSON.parse(meta));
+  popup.innerHTML = newPopup(parseQuery(queryString));
   close.style.top = "0";
 }
 
@@ -1639,7 +1646,37 @@ function parseQuery(query) {
     const key = decodeURIComponent(pair[0]);
     result[key] = decodeURIComponent(pair[1] || "");
   }
-  return result;
+  return JSON.parse(result.meta);
+}
+
+function search(keyword) {
+  document.getElementById("search").value = keyword
+  keyword = keyword.toLowerCase()
+  const cards = Array.from(document.getElementsByClassName("card"))
+  const order = {name: [], flag: [], other: []}
+  for(const card of cards){
+    const queryString = card.getAttribute("meta");
+    const anime = parseQuery(queryString);
+    let visible = false
+    if(anime.name.toLowerCase().includes(keyword)){
+      order.name.push(card)
+      visible = true
+    }else if(anime.flags.includes(keyword)){
+      order.flag.push(card)
+      visible = true
+    }else if(
+      anime.synopsis.includes(keyword) ||
+      anime.saisons == keyword ||
+      anime.épisodes == keyword
+    ){
+      order.other.push(card)
+      visible = true
+    }else{
+      card.style.display = "none"
+    }
+    if(visible)
+      card.style.display = "block"
+  }
 }
   </script>
 </body>
