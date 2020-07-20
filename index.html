@@ -1617,7 +1617,7 @@ function newPopup(anime) {
         </div>
       </div>
       <div class="wrapper flags">
-        ${anime.flags.map((c) => "<div>" + c + "</div>").join("")}
+        ${anime.flags.map((c) => "<div onclick='search(`${c}`)'>" + c + "</div>").join("")}
       </div>
     ` +
     (anime.comments.length > 0
@@ -1650,32 +1650,31 @@ function parseQuery(query) {
 }
 
 function search(keyword) {
-  document.getElementById("search").value = keyword
-  keyword = keyword.toLowerCase()
-  const cards = Array.from(document.getElementsByClassName("card"))
-  const order = {name: [], flag: [], other: []}
-  for(const card of cards){
+  document.getElementById("search").value = keyword;
+  keyword = keyword.toLowerCase();
+  const cards = Array.from(document.getElementsByClassName("card"));
+  const order = { name: [], flag: [], other: [] };
+  for (const card of cards) {
     const queryString = card.getAttribute("meta");
     const anime = parseQuery(queryString);
-    let visible = false
-    if(anime.name.toLowerCase().includes(keyword)){
-      order.name.push(card)
-      visible = true
-    }else if(anime.flags.includes(keyword)){
-      order.flag.push(card)
-      visible = true
-    }else if(
+    let visible = false;
+    if (anime.name.toLowerCase().includes(keyword)) {
+      order.name.push(card);
+      visible = true;
+    } else if (anime.flags.includes(keyword)) {
+      order.flag.push(card);
+      visible = true;
+    } else if (
       anime.synopsis.includes(keyword) ||
       anime.saisons == keyword ||
       anime.épisodes == keyword
-    ){
-      order.other.push(card)
-      visible = true
-    }else{
-      card.style.display = "none"
+    ) {
+      order.other.push(card);
+      visible = true;
+    } else {
+      card.style.display = "none";
     }
-    if(visible)
-      card.style.display = "block"
+    if (visible) card.style.display = "block";
   }
 }
   </script>

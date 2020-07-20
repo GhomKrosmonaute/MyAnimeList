@@ -18,7 +18,7 @@ module.exports = function newPopup(anime) {
         </div>
       </div>
       <div class="wrapper flags">
-        ${anime.flags.map((c) => "<div>" + c + "</div>").join("")}
+        ${anime.flags.map((c) => "<div onclick='search(`${c}`)'>" + c + "</div>").join("")}
       </div>
     ` +
     (anime.comments.length > 0
