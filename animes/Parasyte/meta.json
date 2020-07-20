@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 86,
+  "image": "./animes/Parasyte/image",
+  "prev": 85,
+  "next": 87
 }

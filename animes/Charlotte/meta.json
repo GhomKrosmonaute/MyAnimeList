@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 15,
+  "image": "./animes/Charlotte/image",
+  "prev": 14,
+  "next": 16
 }

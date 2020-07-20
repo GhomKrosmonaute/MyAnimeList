@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 48,
+  "image": "./animes/Great Teacher Onizuka/image",
+  "prev": 47,
+  "next": 49
 }

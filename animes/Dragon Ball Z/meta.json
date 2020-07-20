@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 33,
+  "image": "./animes/Dragon Ball Z/image",
+  "prev": 32,
+  "next": 34
 }

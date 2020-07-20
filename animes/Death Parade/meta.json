@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 24,
+  "image": "./animes/Death Parade/image",
+  "prev": 23,
+  "next": 25
 }

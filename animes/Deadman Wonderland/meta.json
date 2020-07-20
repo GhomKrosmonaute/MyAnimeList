@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 22,
+  "image": "./animes/Deadman Wonderland/image",
+  "prev": 21,
+  "next": 23
 }

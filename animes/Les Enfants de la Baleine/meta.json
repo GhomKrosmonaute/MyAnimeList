@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 67,
+  "image": "./animes/Les Enfants de la Baleine/image",
+  "prev": 66,
+  "next": 68
 }

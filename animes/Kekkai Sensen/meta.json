@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 61,
+  "image": "./animes/Kekkai Sensen/image",
+  "prev": 60,
+  "next": 62
 }

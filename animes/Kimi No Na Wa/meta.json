@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 63,
+  "image": "./animes/Kimi No Na Wa/image",
+  "prev": 62,
+  "next": 64
 }

@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 62,
+  "image": "./animes/Kimetsu no Yaiba/image",
+  "prev": 61,
+  "next": 63
 }

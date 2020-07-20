@@ -119,13 +119,36 @@ h2 {
 }
 
 #popup img {
-  width: 80vw;
-  height: 60vh;
+  width: 70vw;
+  flex-grow: 1;
 }
 
 .frame {
   background-color: #111;
   border-radius: 5px 5px 0 0;
+}
+
+#popup .frame {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+}
+
+#popup .frame > :not(img) {
+  height: 60vh;
+  width: 5vw;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+  color: #eaeaea;
+  transition: all 300ms ease;
+}
+
+#popup .frame > :not(img):hover {
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(234, 234, 234, 0.59);
 }
 
 .flags > * {
@@ -159,32 +182,20 @@ h2 {
   border-radius: 5px;
 }
 
-.nav {
-  display: flex;
-  height: 5vh;
-  width: 80vw;
-}
-
-.nav > * {
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  background-color: #111111;
-  color: #eaeaea;
-  transition: all 300ms ease;
-}
-
-.nav > :hover {
-  z-index: 2;
-  box-shadow: 0 0 10px rgba(234, 234, 234, 0.59);
-}
-
-.nav .prev {
+.prev {
   border-radius: 0 0 0 5px;
 }
 
-.nav .next {
+.next {
   border-radius: 0 0 5px 0;
+}
+
+.icon-button {
+  color: #999999;
+  font-size: 50px;
+  pointer-events: none;
+}
+
+.icon-button::selection {
+  background-color: #111111;
 }

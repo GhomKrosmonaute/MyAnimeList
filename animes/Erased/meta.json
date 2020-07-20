@@ -5,9 +5,10 @@
   "saisons": 0,
   "épisodes": 0,
   "flags": [],
-  "comment": [],
-  "id": 32,
+  "synopsis": "",
+  "comments": [],
+  "id": 36,
   "image": "./animes/Erased/image",
-  "prev": 31,
-  "next": 33
+  "prev": 35,
+  "next": 37
 }

@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 105,
+  "image": "./animes/Twin Star Exorcist/image",
+  "prev": 104,
+  "next": 106
 }

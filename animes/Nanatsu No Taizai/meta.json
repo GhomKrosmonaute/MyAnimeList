@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 79,
+  "image": "./animes/Nanatsu No Taizai/image",
+  "prev": 78,
+  "next": 80
 }

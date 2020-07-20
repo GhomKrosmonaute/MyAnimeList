@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 60,
+  "image": "./animes/Karakai Jouzu no Takagi-San/image",
+  "prev": 59,
+  "next": 61
 }

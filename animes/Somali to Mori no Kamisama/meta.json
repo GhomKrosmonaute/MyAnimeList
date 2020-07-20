@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 98,
+  "image": "./animes/Somali to Mori no Kamisama/image",
+  "prev": 97,
+  "next": 99
 }

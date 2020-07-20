@@ -4,6 +4,18 @@
   "note": 0.5,
   "saisons": 1,
   "épisodes": 24,
-  "flags": ["comédie","action","fantaisie","science fiction","loli","shonen"],
-  "comment": ["A regarder avant son frère du même univers : A Certain Scientific Railgun."]
+  "flags": [
+    "comédie",
+    "action",
+    "fantaisie",
+    "science fiction",
+    "loli",
+    "shonen"
+  ],
+  "synopsis": "Tôma Kamijô possède la capacité d'annuler tout pouvoir surnaturel, appelé l'« Imagine Breaker », rien qu'en le touchant avec sa main droite. Il va faire la rencontre d'une nonne de l'Église anglicane, Index, qui est poursuivie par l'organisation de la Kaballe parce qu'elle possède dans sa mémoire la connaissance des 103 000 volumes de magie interdite. Index sera aidée par Tôma pour survivre et livrer son savoir à l'Église.",
+  "comments": [],
+  "id": 0,
+  "image": "./animes/A Certain Magical Index/image",
+  "prev": 110,
+  "next": 1
 }

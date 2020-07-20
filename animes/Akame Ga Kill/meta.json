@@ -2,8 +2,19 @@
   "name": "Akame Ga Kill",
   "media": "série",
   "note": 0,
-  "flags": [],
-  "comment": [],
-  "saisons": 0,
-  "épisodes": 0
+  "flags": [
+    "comédie",
+    "action",
+    "fantaisie",
+    "seinen",
+    "tragédie"
+  ],
+  "saisons": 1,
+  "épisodes": 24,
+  "synopsis": "Tatsumi est un combattant qui part pour la capitale à la recherche d'un moyen de gagner de l'argent pour aider son village pauvre. Après avoir été victime d'un vol par une femme et avoir perdu tout son argent, Tatsumi est pris en charge par une aristocrate du nom d'Aria. La nuit suivante, le manoir d'Aria est attaqué par un groupe d'assassins connus sous le nom de Night Raid. Alors que Tatsumi tente de défendre Aria de l'assassin Akame, un autre membre du groupe met fin au combat. Il révèle qu'Aria a enlevé plusieurs villageois et les a torturés pour son plaisir. Choqué en découvrant les villageois torturés, qui incluent ses deux meilleurs amis, Tatsumi tue Aria. Après avoir vu le potentiel de Tatsumi, le Night Raid invite le garçon dans leur groupe et le préviennent que peu importe leur manière d'assassiner les corrompus, ils restent des assassins. Tatsumi accepte afin de devenir plus fort et de sauver la capitale. Dans leur lutte contre l'Empire, le Night Raid se défend face à un groupe d'élite connu sous le nom de Jägers , mené par Esdeath, la combattante la plus puissante de l'Empire.",
+  "comments": [],
+  "id": 3,
+  "image": "./animes/Akame Ga Kill/image",
+  "prev": 2,
+  "next": 4
 }

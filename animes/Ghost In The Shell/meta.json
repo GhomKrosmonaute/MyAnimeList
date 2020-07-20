@@ -3,7 +3,12 @@
   "media": "série",
   "note": 0,
   "flags": [],
-  "comment": [],
   "saisons": 0,
-  "épisodes": 0
+  "épisodes": 0,
+  "synopsis": "",
+  "comments": [],
+  "id": 46,
+  "image": "./animes/Ghost In The Shell/image",
+  "prev": 45,
+  "next": 47
 }
