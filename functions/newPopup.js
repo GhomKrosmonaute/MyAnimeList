@@ -5,7 +5,7 @@ module.exports = function newPopup(anime) {
       <div class="frame">
         <div
           class="prev"
-          onclick="openPopup(document.getElementById('anime-${anime.prev}'))">
+          onclick="changePopup(-1)">
           <div class="icon-button">&blacktriangleleft;</div>
         </div>
         <img
@@ -13,12 +13,14 @@ module.exports = function newPopup(anime) {
           alt="${anime.name.toLowerCase()} image">
          <div
           class="next"
-          onclick="openPopup(document.getElementById('anime-${anime.next}'))">
+          onclick="changePopup(1)">
           <div class="icon-button">&blacktriangleright;</div>
         </div>
       </div>
       <div class="wrapper flags">
-        ${anime.flags.map((c) => "<div onclick='search(`" + c + "`)'>" + c + "</div>").join("")}
+        ${anime.flags
+          .map((c) => "<div onclick='search(`" + c + "`)'>" + c + "</div>")
+          .join("")}
       </div>
     ` +
     (anime.comments.length > 0

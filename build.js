@@ -2,11 +2,11 @@ const prepare = require("./builder/prepare");
 const validate = require("./builder/validate");
 const make = require("./builder/make");
 
-execute("built in", async () => {
-  await execute("prepared in", prepare);
-  const validated = await execute("validated in", validate);
-  await execute("makes in", make, validated);
-}).catch(console.error);
+(async () => {
+  await execute("Convert new anime images to anime data", prepare);
+  const validated = await execute("Check anime data and format it", validate);
+  await execute("Write page with anime data", make, validated);
+})().catch(console.error);
 
 async function execute(task, callback, ...params) {
   console.time(task);

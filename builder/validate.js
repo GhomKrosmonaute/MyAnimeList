@@ -25,11 +25,6 @@ async function validate() {
     meta.id = i;
     meta.image = "./animes/" + folder + "/image";
 
-    if (i > 0) meta.prev = i - 1;
-    else meta.prev = animes.length - 1;
-    if (i < animes.length - 1) meta.next = i + 1;
-    else meta.next = 0;
-
     metas.push(meta);
 
     if (edited)

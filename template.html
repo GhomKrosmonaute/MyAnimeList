@@ -17,7 +17,7 @@
         placeholder="Rechercher">
     </header>
     <main>
-      <div class="wrapper">
+      <div id="cards" class="wrapper">
         {{cards}}
       </div>
     </main>
@@ -34,10 +34,9 @@
     <div id="popup"></div>
   </div>
   <script>
+    let POPUP_CARD = null
     document.getElementById("close").onclick = closePopup;
-    document.getElementById("search").onkeyup = event => {
-      if(event.key === "Enter") search(event.target.value)
-    };
+    document.getElementById("search").onkeyup = event => search(event.target.value);
     {{functions}}
   </script>
 </body>

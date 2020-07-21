@@ -1,6 +1,5 @@
 const querystring = require("querystring");
 const { promises: fs } = require("fs");
-const extRegex = /\.(jpe?g|png|gif)/;
 
 async function make(animes) {
   const cards = [];

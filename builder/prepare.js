@@ -12,7 +12,7 @@ async function prepare() {
     await fs.mkdir("./animes/" + folder);
     await fs.rename("./animes/" + filename, "./animes/" + folder + "/image");
     const meta = Object.create(META);
-    meta.name = folder.replace(/'/g, "apostrophe");
+    meta.name = folder;
     await fs.writeFile(
       "./animes/" + folder + "/meta.json",
       JSON.stringify(meta, null, 2)
