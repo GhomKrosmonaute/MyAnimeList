@@ -5,7 +5,8 @@
   "scripts": {
     "prettier": "prettier --write functions builder build.js",
     "sass": "node-sass styles/index.scss -o .",
-    "build": "node build.js"
+    "builder": "node build.js",
+    "build": "yarn prettier && yarn sass && yarn builder"
   },
   "repository": {
     "type": "git",

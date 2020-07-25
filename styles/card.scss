@@ -5,6 +5,7 @@
   background-color: #666;
   box-shadow: 0 0 10px #000;
   border-radius: 5px;
+  transition: all .5s ease;
 
   h2 {
     white-space: nowrap;
@@ -12,8 +13,19 @@
     overflow: hidden;
   }
 
-  img {
-    width: 250px;
-    height: 250px;
+  .frame {
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  &:hover {
+    background-color: #999999;
+    box-shadow: 0 0 15px #111111;
   }
 }

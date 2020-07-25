@@ -1,3 +1,7 @@
+/**
+ * @param {Anime} anime
+ * @returns {string}
+ */
 module.exports = function newPopup(anime) {
   return (
     `
@@ -11,7 +15,7 @@ module.exports = function newPopup(anime) {
         <img
           src="${anime.image}"
           alt="${anime.name.toLowerCase()} image">
-         <div
+        <div
           class="next"
           onclick="changePopup(1)">
           <div class="icon-button">&blacktriangleright;</div>
@@ -22,6 +26,10 @@ module.exports = function newPopup(anime) {
           .map((c) => "<div onclick='search(`" + c + "`)'>" + c + "</div>")
           .join("")}
       </div>
+      <!--<p
+        class="synopsis"
+        ${anime.synopsis}
+      </p>-->
     ` +
     (anime.comments.length > 0
       ? `

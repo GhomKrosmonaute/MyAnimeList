@@ -14,8 +14,6 @@ body {
     color: #999; }
     body a:hover {
       color: #fff; }
-  body img {
-    object-fit: contain; }
   body h2 {
     font-size: 22px;
     padding-bottom: 5px; }
@@ -79,14 +77,22 @@ body {
   margin: 10px;
   background-color: #666;
   box-shadow: 0 0 10px #000;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: all .5s ease; }
   .card h2 {
     white-space: nowrap;
     width: 250px;
     overflow: hidden; }
-  .card img {
-    width: 250px;
-    height: 250px; }
+  .card .frame {
+    border-radius: 5px;
+    overflow: hidden; }
+    .card .frame img {
+      object-fit: contain;
+      width: 250px;
+      height: 250px; }
+  .card:hover {
+    background-color: #999999;
+    box-shadow: 0 0 15px #111111; }
 
 #close {
   position: fixed;
@@ -109,6 +115,7 @@ body {
     left: 50vw;
     z-index: 3; }
     #close #popup img {
+      object-fit: contain;
       width: 70vw;
       flex-grow: 1; }
     #close #popup h2 {
@@ -140,7 +147,8 @@ body {
       width: 80vw;
       height: 60vh;
       display: flex;
-      border-radius: 5px; }
+      border-radius: 5px;
+      overflow: hidden; }
       #close #popup .frame .prev {
         border-radius: 5px; }
       #close #popup .frame .next {
@@ -165,3 +173,16 @@ body {
         #close #popup .frame > :not(img):hover {
           z-index: 2;
           box-shadow: 0 0 10px rgba(234, 234, 234, 0.59); }
+      #close #popup .frame .synopsis {
+        width: 70vw;
+        height: 60vh;
+        position: absolute;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        left: 35vw;
+        top: 60vh;
+        background-image: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0) 50%);
+        background-repeat: no-repeat;
+        transition: top .5s ease; }
+      #close #popup .frame:hover .synopsis {
+        top: 30vh; }
