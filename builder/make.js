@@ -1,6 +1,10 @@
 const querystring = require("querystring");
 const { promises: fs } = require("fs");
 
+/**
+ * @param {Anime[]} animes
+ * @returns {Promise<void>}
+ */
 async function make(animes) {
   const cards = [];
   const template = await fs.readFile("./template.html", { encoding: "utf8" });

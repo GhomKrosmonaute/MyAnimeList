@@ -8,5 +8,5 @@ declare interface Anime {
   comments: string[]
   synopsis: string
   image: string
-  id: string
+  id: number
 }

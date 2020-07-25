@@ -1,3 +1,4 @@
+/** @param {number} next */
 module.exports = function changePopup(next) {
   const cards = Array.from(document.getElementsByClassName("card")).filter(
     (c) => c.style.display !== "none"

@@ -1,3 +1,7 @@
+/**
+ * @param {string} query
+ * @returns {Anime}
+ */
 module.exports = function parseQuery(query) {
   const result = {};
   const pairs = (query[0] === "?" ? query.substr(1) : query).split("&");
