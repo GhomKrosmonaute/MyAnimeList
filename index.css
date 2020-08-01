@@ -85,6 +85,7 @@ body {
     overflow: hidden; }
   .card .frame {
     border-radius: 5px;
+    border: #111111 4px solid;
     overflow: hidden; }
     .card .frame img {
       object-fit: contain;
@@ -114,10 +115,6 @@ body {
     top: 50vh;
     left: 50vw;
     z-index: 3; }
-    #close #popup img {
-      object-fit: contain;
-      width: 70vw;
-      flex-grow: 1; }
     #close #popup h2 {
       text-align: center; }
     #close #popup .flags > * {
@@ -148,6 +145,7 @@ body {
       height: 60vh;
       display: flex;
       border-radius: 5px;
+      border: #111111 4px solid;
       overflow: hidden; }
       #close #popup .frame .prev {
         border-radius: 5px; }
@@ -186,3 +184,7 @@ body {
         transition: top .5s ease; }
       #close #popup .frame:hover .synopsis {
         top: 30vh; }
+      #close #popup .frame img {
+        object-fit: contain;
+        width: 70vw;
+        flex-grow: 1; }

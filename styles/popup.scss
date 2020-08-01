@@ -20,12 +20,6 @@
     left: 50vw;
     z-index: 3;
 
-    img {
-      object-fit: contain;
-      width: 70vw;
-      flex-grow: 1;
-    }
-
     h2 {
       text-align: center;
     }
@@ -66,6 +60,7 @@
       height: 60vh;
       display: flex;
       border-radius: 5px;
+      border: #111111 4px solid;
       overflow: hidden;
 
       .prev {
@@ -119,6 +114,12 @@
 
       &:hover .synopsis {
         top: 30vh;
+      }
+
+      img {
+        object-fit: contain;
+        width: 70vw;
+        flex-grow: 1;
       }
     }
   }
