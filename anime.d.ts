@@ -4,7 +4,7 @@ declare interface Anime {
   note: number
   saisons: number
   épisodes: number
-  flags: string[]
+  tags: string[]
   comments: string[]
   synopsis: string
   image: string

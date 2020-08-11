@@ -14,7 +14,7 @@ module.exports = function search(keyword) {
       })
     );
   } else {
-    const order = { name: [], flag: [], media: [], other: [] };
+    const order = { name: [], tag: [], media: [], other: [] };
     for (const card of cards) {
       const queryString = card.getAttribute("meta");
       /** @type {Anime} */
@@ -23,8 +23,8 @@ module.exports = function search(keyword) {
       if (anime.name.toLowerCase().includes(keyword)) {
         order.name.push(card);
         visible = true;
-      } else if (anime.flags.includes(keyword)) {
-        order.flag.push(card);
+      } else if (anime.tags.includes(keyword)) {
+        order.tag.push(card);
         visible = true;
       } else if (anime.media === keyword) {
         order.media.push(card);
@@ -33,7 +33,7 @@ module.exports = function search(keyword) {
         anime.synopsis.includes(keyword) ||
         anime.saisons == keyword ||
         anime.épisodes == keyword ||
-        anime.flags.some((flag) => flag.includes(keyword)) ||
+        anime.tags.some((tag) => tag.includes(keyword)) ||
         anime.media.includes(keyword)
       ) {
         order.other.push(card);
@@ -44,7 +44,7 @@ module.exports = function search(keyword) {
       if (visible) card.style.display = "block";
     }
     sortFromOrder(
-      order.name.concat(order.flag).concat(order.media).concat(order.other)
+      order.name.concat(order.tag).concat(order.media).concat(order.other)
     );
   }
 };

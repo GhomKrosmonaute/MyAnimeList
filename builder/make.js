@@ -19,7 +19,7 @@ async function make(animes) {
       <div
         id="anime-${anime.id}"
         meta="${meta}"
-        class="${["card", ...anime.flags].join(" ")}"
+        class="${["card", ...anime.tags].join(" ")}"
         onclick="openPopup(this)">
         <h2 title="${anime.name}"> ${anime.name} </h2>
         <div class="frame">

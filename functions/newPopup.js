@@ -21,8 +21,8 @@ module.exports = function newPopup(anime) {
           <div class="icon-button">&blacktriangleright;</div>
         </div>
       </div>
-      <div class="wrapper flags">
-        ${anime.flags
+      <div class="wrapper tags">
+        ${anime.tags
           .map((c) => "<div onclick='search(`" + c + "`)'>" + c + "</div>")
           .join("")}
       </div>
