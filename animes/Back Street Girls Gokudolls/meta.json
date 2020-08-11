@@ -4,9 +4,14 @@
   "note": 0,
   "saisons": 0,
   "épisodes": 0,
-  "flags": [],
+  "flags": [
+    "loli",
+    "mafia",
+    "comédie"
+  ],
   "comments": [],
   "synopsis": "",
+  "date": -1,
   "id": 9,
   "image": "./animes/Back Street Girls Gokudolls/image"
 }
