@@ -17,6 +17,7 @@
         placeholder="Rechercher">
     </header>
     <main>
+      <h2><span id="result-count"></span> résultats</h2>
       <div id="cards" class="wrapper">
         
       <div
@@ -1703,6 +1704,7 @@
     let POPUP_CARD = null
     document.getElementById("close").onclick = closePopup;
     document.getElementById("search").onkeyup = event => search(event.target.value);
+    refreshCount();
     function changePopup(next) {
   const cards = Array.from(document.getElementsByClassName("card")).filter(
     (c) => c.style.display !== "none"
@@ -1777,6 +1779,14 @@ function parseQuery(query) {
   return JSON.parse(result.meta);
 }
 
+function refreshCount() {
+  document.getElementById("result-count").innerText = String(
+    Array.from(document.getElementById("cards").children).filter((card) => {
+      return card.style.display !== "none";
+    }).length
+  );
+}
+
 function search(keyword) {
   document.getElementById("close").style.top = "-100vh";
   document.getElementById("search").value = keyword;
@@ -1826,6 +1836,7 @@ function search(keyword) {
       order.name.concat(order.tag).concat(order.media).concat(order.other)
     );
   }
+  refreshCount();
 }
 
 function sortFromOrder(order) {

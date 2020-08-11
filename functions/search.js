@@ -47,4 +47,5 @@ module.exports = function search(keyword) {
       order.name.concat(order.tag).concat(order.media).concat(order.other)
     );
   }
+  refreshCount();
 };
