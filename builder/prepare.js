@@ -1,5 +1,5 @@
 const { promises: fs } = require("fs");
-const extRegex = /\.(jpe?g|png|gif)/;
+const extRegex = /\.(jpe?g|png|gif|webp)/;
 const META = require("../meta.json");
 
 async function prepare() {
