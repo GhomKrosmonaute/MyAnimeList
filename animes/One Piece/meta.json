@@ -2,11 +2,12 @@
   "name": "One Piece",
   "media": "série",
   "note": 0,
-  "flags": [],
+  "tags": [],
   "saisons": 0,
   "épisodes": 0,
   "synopsis": "",
   "comments": [],
-  "id": 85,
+  "date": -1,
+  "id": 97,
   "image": "./animes/One Piece/image"
 }

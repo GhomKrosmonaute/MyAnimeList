@@ -2,11 +2,12 @@
   "name": "Death Note",
   "media": "série",
   "note": 0,
-  "flags": [],
+  "tags": [],
   "saisons": 0,
   "épisodes": 0,
   "synopsis": "",
   "comments": [],
-  "id": 23,
+  "date": -1,
+  "id": 28,
   "image": "./animes/Death Note/image"
 }

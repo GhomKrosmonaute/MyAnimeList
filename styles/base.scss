@@ -29,12 +29,15 @@ body {
   footer {
     font-family: Impact, sans-serif;
     text-align: center;
-    color: #999;
     background-color: #111;
     padding: 20px;
   }
 
   header {
+    h1 {
+      color: #eaeaea;
+    }
+
     #search {
       padding: 2px;
       border-radius: 2px;
@@ -53,6 +56,11 @@ body {
   main {
     margin: 15px 0 15px 0;
     flex-grow: 1;
+
+    > h2 {
+      color: #999999;
+      text-align: center;
+    }
   }
 
   footer {

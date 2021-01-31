@@ -2,11 +2,17 @@
   "name": "B. The Beginning",
   "media": "série",
   "note": 0,
-  "flags": [],
-  "saisons": 0,
-  "épisodes": 0,
-  "synopsis": "",
+  "tags": [
+    "action",
+    "série policière",
+    "fantastique",
+    "thriller"
+  ],
+  "saisons": 1,
+  "épisodes": 12,
+  "synopsis": "Dans un monde alimenté par une technologie de pointe, l'histoire et l'action prennent place dans la nation hiérarchique de Crémone. Koku, le protagoniste. Keith, l'inspecteur légendaire du RIS, le Royal Investigation Service. Une organisation criminelle mystérieuse. Une grande variété de personnages courent à travers la ville fortifiée car ils sont assaillis par le tueur en série, « Killer B », et une série de crimes qui mélange le réel et le fantastique.",
   "comments": [],
-  "id": 6,
+  "date": 1519948800000,
+  "id": 8,
   "image": "./animes/B. The Beginning/image"
 }

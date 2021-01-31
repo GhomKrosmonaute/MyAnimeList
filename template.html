@@ -17,6 +17,7 @@
         placeholder="Rechercher">
     </header>
     <main>
+      <h2><span id="result-count"></span> résultats</h2>
       <div id="cards" class="wrapper">
         {{cards}}
       </div>
@@ -37,6 +38,7 @@
     let POPUP_CARD = null
     document.getElementById("close").onclick = closePopup;
     document.getElementById("search").onkeyup = event => search(event.target.value);
+    refreshCount();
     {{functions}}
   </script>
 </body>

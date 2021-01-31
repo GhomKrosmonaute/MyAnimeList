@@ -21,9 +21,10 @@ body {
   body footer {
     font-family: Impact, sans-serif;
     text-align: center;
-    color: #999;
     background-color: #111;
     padding: 20px; }
+  body header h1 {
+    color: #eaeaea; }
   body header #search {
     padding: 2px;
     border-radius: 2px;
@@ -36,6 +37,9 @@ body {
   body main {
     margin: 15px 0 15px 0;
     flex-grow: 1; }
+    body main > h2 {
+      color: #999999;
+      text-align: center; }
   body footer {
     display: flex;
     justify-content: center;
@@ -117,14 +121,14 @@ body {
     z-index: 3; }
     #close #popup h2 {
       text-align: center; }
-    #close #popup .flags > * {
+    #close #popup .tags > * {
       margin: 5px;
       padding: 5px 10px;
       border-radius: 5px;
       background-color: #333333;
       color: #999999;
       cursor: pointer; }
-      #close #popup .flags > *:hover {
+      #close #popup .tags > *:hover {
         color: #eaeaea; }
     #close #popup .comments {
       max-height: 17vh;
