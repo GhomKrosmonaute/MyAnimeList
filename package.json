@@ -2,11 +2,14 @@
   "name": "ghom-anime-list",
   "version": "1.0.0",
   "description": "Anime list static website by Ghom",
+  "prettier": {
+    "semi": false
+  },
   "scripts": {
-    "prettier": "prettier --write functions builder build.js",
+    "format": "prettier --write functions builder build.js",
     "sass": "node-sass styles/index.scss -o .",
     "builder": "node build.js",
-    "build": "yarn prettier && yarn sass && yarn builder"
+    "build": "yarn format && yarn sass && yarn builder"
   },
   "repository": {
     "type": "git",

@@ -38,5 +38,5 @@ module.exports = function newPopup(anime) {
         </div>
       `
       : "")
-  );
-};
+  )
+}

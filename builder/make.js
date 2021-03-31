@@ -1,20 +1,20 @@
-const querystring = require("querystring");
-const { promises: fs } = require("fs");
+const querystring = require("querystring")
+const { promises: fs } = require("fs")
 
 /**
  * @param {Anime[]} animes
  * @returns {Promise<void>}
  */
 async function make(animes) {
-  const cards = [];
-  const template = await fs.readFile("./template.html", { encoding: "utf8" });
+  const cards = []
+  const template = await fs.readFile("./template.html", { encoding: "utf8" })
 
   const functions = (await fs.readdir("./functions")).map((name) =>
     require("../functions/" + name)
-  );
+  )
 
   for (const anime of animes) {
-    const meta = querystring.stringify({ meta: JSON.stringify(anime) });
+    const meta = querystring.stringify({ meta: JSON.stringify(anime) })
     cards.push(`
       <div
         id="anime-${anime.id}"
@@ -29,7 +29,7 @@ async function make(animes) {
             alt="${anime.name.toLowerCase()} image">
         </div>
       </div>
-    `);
+    `)
   }
 
   await fs.writeFile(
@@ -37,7 +37,7 @@ async function make(animes) {
     template
       .replace("{{cards}}", cards.join(""))
       .replace("{{functions}}", functions.join("\n\n"))
-  );
+  )
 }
 
-module.exports = make;
+module.exports = make
