@@ -1,7 +1,7 @@
 const { promises: fs } = require("fs")
 
 /** @type {Anime} */
-const ANIME = require("../meta.json")
+const baseMeta = require("../meta.json")
 
 /** @returns {Promise<Anime[]>} */
 async function validate() {
@@ -17,14 +17,14 @@ async function validate() {
     const anime = require("../animes/" + folder + "/meta.json")
     let edited = false
 
-    for (const PROP in ANIME)
-      if (!anime.hasOwnProperty(PROP)) {
-        anime[PROP] = ANIME[PROP]
+    for (const prop in baseMeta)
+      if (!anime.hasOwnProperty(prop)) {
+        anime[prop] = baseMeta[prop]
         edited = true
       }
 
     for (const prop in anime)
-      if (!ANIME.hasOwnProperty(prop)) {
+      if (!baseMeta.hasOwnProperty(prop)) {
         delete anime[prop]
         edited = true
       }

@@ -33,8 +33,8 @@ module.exports = function search(keyword) {
         visible = true
       } else if (
         anime.synopsis.toLowerCase().includes(keyword) ||
-        anime.saisons === Number(keyword) ||
-        anime.épisodes === Number(keyword) ||
+        anime.seasons === Number(keyword) ||
+        anime.episodes === Number(keyword) ||
         anime.tags.some((tag) => tag.toLowerCase().includes(keyword)) ||
         anime.media.toLowerCase().includes(keyword)
       ) {
