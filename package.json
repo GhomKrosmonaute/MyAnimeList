@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/CamilleAbella/MyAnimeList#readme",
   "dependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.3.2"
   },
   "devDependencies": {
